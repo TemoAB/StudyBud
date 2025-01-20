@@ -8,3 +8,4 @@ pycodestyle
 pytz
 sqlparse
 toml
+gunicorn
