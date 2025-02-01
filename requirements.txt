@@ -9,3 +9,8 @@ pytz
 sqlparse
 toml
 gunicorn
+environ
+dj-database-url
+psycopg2-binary
+whitenoise
+
