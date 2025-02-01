@@ -1,1 +1,1 @@
-web: gunicorn studybud.wsgipip show gunicorn
+web: gunicorn studybud.wsgi:application
