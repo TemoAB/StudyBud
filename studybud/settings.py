@@ -23,7 +23,7 @@ else:
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'studybud-temo.up.railway.app']
 
-CRSF_TRUSTED_ORIGINS = ['https://studybud-temo.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://studybud-temo.up.railway.app']  # Fixed the typo here
 
 # Application definition
 
@@ -78,21 +78,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'studybud.wsgi.application'
 
+# Database settings (default to SQLite if not in production)
 DATABASES = {
-        'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': BASE_DIR / 'db.sqlite3',
-        }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
-
-
+}
 
 POSTGRES_LOCALLY = False
 if ENVIRONMENT == 'production' or POSTGRES_LOCALLY:
     DATABASES = {
         'default': dj_database_url.parse(env('DATABASE_URL'))
     }
-
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -127,4 +125,15 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS settings
-CORS_ALLOW_ALL_ORIGINS = True
+if ENVIRONMENT == 'development':
+    CORS_ALLOW_ALL_ORIGINS = True
+else:
+    CORS_ALLOWED_ORIGINS = ['https://studybud-temo.up.railway.app']  # restrict CORS to your production domain
+
+# CSRF Cookie and Session Cookie settings for production
+if ENVIRONMENT == 'production':
+    CSRF_COOKIE_SECURE = True  # Only transmit cookies over HTTPS
+    SESSION_COOKIE_SECURE = True  # Only transmit cookies over HTTPS
+    SECURE_SSL_REDIRECT = True  # Redirect all HTTP to HTTPS
+    CSRF_COOKIE_HTTPONLY = True  # Protect CSRF cookie from being accessed by JavaScript
+    SESSION_COOKIE_HTTPONLY = True  # Protect session cookie from being accessed by JavaScript
