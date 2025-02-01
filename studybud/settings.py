@@ -134,6 +134,6 @@ else:
 if ENVIRONMENT == 'production':
     CSRF_COOKIE_SECURE = True  # Only transmit cookies over HTTPS
     SESSION_COOKIE_SECURE = True  # Only transmit cookies over HTTPS
-    SECURE_SSL_REDIRECT = True  # Redirect all HTTP to HTTPS
+    SECURE_SSL_REDIRECT = False  # Redirect all HTTP to HTTPS
     CSRF_COOKIE_HTTPONLY = True  # Protect CSRF cookie from being accessed by JavaScript
     SESSION_COOKIE_HTTPONLY = True  # Protect session cookie from being accessed by JavaScript
