@@ -1,0 +1,68 @@
+[33mcommit 619eb74ae4d7b7c85382234322917dcbb1ef4465[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Temo <renrenom@gmail.com>
+Date:   Sat Feb 1 13:57:32 2025 +0400
+
+    Updated files
+
+[33mcommit 802d3817bc522f55e69331a23d4f82369613ca3b[m
+Author: TemoAB <130500588+Tgit add .emoAB@users.noreply.github.com>
+Date:   Tue Jan 21 01:28:03 2025 +0400
+
+    Update settings.py
+
+[33mcommit 96df83c34a1e1cc2b62bc7465bbebf0c6016e30d[m
+Author: TemoAB <renrenom@gmail.com>
+Date:   Tue Jan 21 01:22:22 2025 +0400
+
+    Add collected static files
+
+[33mcommit 4d9449717c00f07c7b0908a927af4ca54d7c4631[m
+Author: TemoAB <130500588+TemoAB@users.noreply.github.com>
+Date:   Tue Jan 21 01:03:45 2025 +0400
+
+    Update settings.py
+
+[33mcommit 392e9b151a45270dff427f445109c09adf6ba593[m
+Author: TemoAB <130500588+TemoAB@users.noreply.github.com>
+Date:   Tue Jan 21 00:58:40 2025 +0400
+
+    Update requirements.txt
+
+[33mcommit a37cccb0115d4044601f6c7ad904b2f519b4aae3[m
+Author: TemoAB <130500588+TemoAB@users.noreply.github.com>
+Date:   Tue Jan 21 00:56:04 2025 +0400
+
+    Update requirements.txt
+
+[33mcommit 152461502817e5b7fe1b9a56a92d31efc3bcef12[m
+Merge: 93dcb9e 19e2536
+Author: Dennis Ivy <33843378+divanov11@users.noreply.github.com>
+Date:   Fri Sep 24 18:59:16 2021 -0400
+
+    Merge pull request #1 from MidouWebDev/master
+    
+    Create README.md
+
+[33mcommit 19e25367159741bb1884f37c9650890784f41022[m
+Author: MidouWebDev <contact.midoudev@gmail.com>
+Date:   Fri Sep 24 23:57:10 2021 +0100
+
+    Create README.md
+
+[33mcommit 93dcb9e99b6bdf1efa7b75822d2d1cd3cc8690f2[m
+Author: divanov11 <ivanovsin11@gmail.com>
+Date:   Wed Sep 22 09:38:51 2021 -0400
+
+    Added theme folder
+
+[33mcommit 7416f0049ac444cf0ae6f8ff1e2236e8043f4823[m
+Author: divanov11 <ivanovsin11@gmail.com>
+Date:   Wed Sep 22 09:38:19 2021 -0400
+
+    Finial touches added
+
+[33mcommit 532688060a569c639bf50e6c778495ab9589db60[m
+Author: divanov11 <ivanovsin11@gmail.com>
+Date:   Wed Sep 22 09:36:11 2021 -0400
+
+    Finial touches added
